@@ -18,6 +18,10 @@
 		001B18A129AE780200D34157 /* CVtableviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001B18A029AE780200D34157 /* CVtableviewUITestsLaunchTests.swift */; };
 		001B18AF29AE785E00D34157 /* CVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001B18AD29AE785E00D34157 /* CVTableViewCell.swift */; };
 		001B18B029AE785E00D34157 /* CVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001B18AE29AE785E00D34157 /* CVTableViewCell.xib */; };
+		001B18B929AE867600D34157 /* imageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001B18B729AE867600D34157 /* imageTableViewCell.swift */; };
+		001B18BA29AE867600D34157 /* imageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001B18B829AE867600D34157 /* imageTableViewCell.xib */; };
+		001B18BD29AE924700D34157 /* buttonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001B18BB29AE924600D34157 /* buttonTableViewCell.swift */; };
+		001B18BE29AE924700D34157 /* buttonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001B18BC29AE924600D34157 /* buttonTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		001B18A029AE780200D34157 /* CVtableviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVtableviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		001B18AD29AE785E00D34157 /* CVTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTableViewCell.swift; sourceTree = "<group>"; };
 		001B18AE29AE785E00D34157 /* CVTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVTableViewCell.xib; sourceTree = "<group>"; };
+		001B18B729AE867600D34157 /* imageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageTableViewCell.swift; sourceTree = "<group>"; };
+		001B18B829AE867600D34157 /* imageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageTableViewCell.xib; sourceTree = "<group>"; };
+		001B18BB29AE924600D34157 /* buttonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonTableViewCell.swift; sourceTree = "<group>"; };
+		001B18BC29AE924600D34157 /* buttonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = buttonTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 				001B188B29AE780100D34157 /* Info.plist */,
 				001B18AD29AE785E00D34157 /* CVTableViewCell.swift */,
 				001B18AE29AE785E00D34157 /* CVTableViewCell.xib */,
+				001B18B729AE867600D34157 /* imageTableViewCell.swift */,
+				001B18B829AE867600D34157 /* imageTableViewCell.xib */,
+				001B18BB29AE924600D34157 /* buttonTableViewCell.swift */,
+				001B18BC29AE924600D34157 /* buttonTableViewCell.xib */,
 			);
 			path = CVtableview;
 			sourceTree = "<group>";
@@ -240,7 +252,9 @@
 				001B18B029AE785E00D34157 /* CVTableViewCell.xib in Resources */,
 				001B188A29AE780100D34157 /* LaunchScreen.storyboard in Resources */,
 				001B188729AE780100D34157 /* Assets.xcassets in Resources */,
+				001B18BE29AE924700D34157 /* buttonTableViewCell.xib in Resources */,
 				001B188529AE77FF00D34157 /* Main.storyboard in Resources */,
+				001B18BA29AE867600D34157 /* imageTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001B18B929AE867600D34157 /* imageTableViewCell.swift in Sources */,
 				001B18AF29AE785E00D34157 /* CVTableViewCell.swift in Sources */,
 				001B188229AE77FF00D34157 /* ViewController.swift in Sources */,
 				001B187E29AE77FF00D34157 /* AppDelegate.swift in Sources */,
 				001B188029AE77FF00D34157 /* SceneDelegate.swift in Sources */,
+				001B18BD29AE924700D34157 /* buttonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

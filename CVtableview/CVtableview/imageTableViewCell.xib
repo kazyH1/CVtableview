@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="211" id="KGk-i7-Jjw" customClass="imageTableViewCell" customModule="CVtableview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="465" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aYA-gP-wjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="211"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="5Gg-nE-FMC"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ffE-gV-881">
+                        <rect key="frame" x="240" y="0.0" width="225" height="211"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aYA-gP-wjZ" secondAttribute="bottom" id="5OW-th-cVV"/>
+                    <constraint firstAttribute="trailing" secondItem="ffE-gV-881" secondAttribute="trailing" id="7xF-nN-dSg"/>
+                    <constraint firstItem="aYA-gP-wjZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="P6Y-3a-yI8"/>
+                    <constraint firstItem="ffE-gV-881" firstAttribute="leading" secondItem="aYA-gP-wjZ" secondAttribute="trailing" id="UDl-R7-slX"/>
+                    <constraint firstItem="aYA-gP-wjZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Xgu-qj-Bez"/>
+                    <constraint firstAttribute="bottom" secondItem="ffE-gV-881" secondAttribute="bottom" id="bO1-Nb-pk2"/>
+                    <constraint firstItem="ffE-gV-881" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lNf-hm-Eas"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgUser" destination="aYA-gP-wjZ" id="Jnu-00-Rqv"/>
+                <outlet property="txtDetail" destination="ffE-gV-881" id="1E6-pC-y5i"/>
+            </connections>
+            <point key="canvasLocation" x="-57" y="25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

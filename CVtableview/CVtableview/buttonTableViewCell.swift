@@ -1,5 +1,5 @@
 //
-//  CVTableViewCell.swift
+//  buttonTableViewCell.swift
 //  CVtableview
 //
 //  Created by HuyNguyen on 01/03/2023.
@@ -7,12 +7,10 @@
 
 import UIKit
 
-class CVTableViewCell: UITableViewCell {
+class buttonTableViewCell: UITableViewCell {
 
-    
-    @IBOutlet weak var lbTitle: UILabel!
-    @IBOutlet weak var lbName: UILabel!
-   
+    @IBOutlet weak var btnCall: UIButton!
+    @IBOutlet weak var imgBackground: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

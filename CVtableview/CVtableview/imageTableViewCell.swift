@@ -1,5 +1,5 @@
 //
-//  CVTableViewCell.swift
+//  imageTableViewCell.swift
 //  CVtableview
 //
 //  Created by HuyNguyen on 01/03/2023.
@@ -7,12 +7,10 @@
 
 import UIKit
 
-class CVTableViewCell: UITableViewCell {
+class imageTableViewCell: UITableViewCell {
 
-    
-    @IBOutlet weak var lbTitle: UILabel!
-    @IBOutlet weak var lbName: UILabel!
-   
+    @IBOutlet weak var txtDetail: UITextView!
+    @IBOutlet weak var imgUser: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
