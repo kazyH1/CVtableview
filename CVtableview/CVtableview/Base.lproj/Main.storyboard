@@ -11,12 +11,12 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tableview" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CVtableview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9DT-W8-bNn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4so-U9-b0B">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -24,19 +24,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9DT-W8-bNn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="54D-Pb-LEQ"/>
-                            <constraint firstItem="9DT-W8-bNn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5r6-jp-odT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9DT-W8-bNn" secondAttribute="bottom" id="bSe-dZ-8CW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9DT-W8-bNn" secondAttribute="trailing" id="yTO-ay-XN4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4so-U9-b0B" secondAttribute="trailing" id="EBY-Y8-p2h"/>
+                            <constraint firstItem="4so-U9-b0B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z9M-LJ-4VQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4so-U9-b0B" secondAttribute="bottom" id="a1H-pr-gHu"/>
+                            <constraint firstItem="4so-U9-b0B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nnH-He-aFN"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tbvCV" destination="9DT-W8-bNn" id="sUo-0g-i1d"/>
+                        <outlet property="tbvCV" destination="4so-U9-b0B" id="zD1-df-bsP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="68"/>
+            <point key="canvasLocation" x="30" y="54"/>
         </scene>
     </scenes>
     <resources>

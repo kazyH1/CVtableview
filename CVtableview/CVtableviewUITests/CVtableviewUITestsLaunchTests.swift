@@ -1,13 +1,13 @@
 //
-//  tableviewUITestsLaunchTests.swift
-//  tableviewUITests
+//  CVtableviewUITestsLaunchTests.swift
+//  CVtableviewUITests
 //
-//  Created by HuyNguyen on 28/02/2023.
+//  Created by HuyNguyen on 01/03/2023.
 //
 
 import XCTest
 
-class tableviewUITestsLaunchTests: XCTestCase {
+class CVtableviewUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

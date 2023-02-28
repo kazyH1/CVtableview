@@ -1,19 +1,18 @@
 //
 //  ViewController.swift
-//  tableview
+//  CVtableview
 //
-//  Created by HuyNguyen on 28/02/2023.
+//  Created by HuyNguyen on 01/03/2023.
 //
 
 import UIKit
-struct Data {
-    var nameLbName: String
-    var textTxtIntro: String
-    
-}
 
-class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-    
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    struct Data {
+        var nameLbName: String
+        var textTxtIntro: String
+        
+    }
     @IBOutlet weak var tbvCV: UITableView!{
         didSet{
             tbvCV.delegate = self
@@ -38,6 +37,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         cell.txtIntro.text = dataCell.textTxtIntro
         return cell
     }
+
+   
+
 
 }
 

@@ -1,8 +1,8 @@
 //
 //  CVTableViewCell.swift
-//  tableview
+//  CVtableview
 //
-//  Created by HuyNguyen on 28/02/2023.
+//  Created by HuyNguyen on 01/03/2023.
 //
 
 import UIKit
