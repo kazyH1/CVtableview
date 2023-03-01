@@ -18,32 +18,33 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryb-3N-SLb">
-                        <rect key="frame" x="0.0" y="0.0" width="386" height="40"/>
-                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                        <rect key="frame" x="0.0" y="0.0" width="386" height="60"/>
+                        <color key="backgroundColor" red="0.97797936508336014" green="0.8979361234828519" blue="0.39885397069214462" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="tdy-X0-ojA"/>
+                            <constraint firstAttribute="height" constant="60" id="tdy-X0-ojA"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ula-tn-iXM">
-                        <rect key="frame" x="20" y="40" width="346" height="60"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ula-tn-iXM">
+                        <rect key="frame" x="0.0" y="60" width="386" height="40"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="60" id="chE-Mg-ex6"/>
+                            <constraint firstAttribute="height" constant="40" id="chE-Mg-ex6"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.38206231163949078" green="0.086328913490010678" blue="0.080199550342386128" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Ryb-3N-SLb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AF1-YW-UL3"/>
-                    <constraint firstItem="ula-tn-iXM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Hg7-nI-XLH"/>
+                    <constraint firstAttribute="trailing" secondItem="ula-tn-iXM" secondAttribute="trailing" id="GOI-v9-kkf"/>
                     <constraint firstItem="ula-tn-iXM" firstAttribute="top" secondItem="Ryb-3N-SLb" secondAttribute="bottom" id="M8Y-9o-RV1"/>
+                    <constraint firstItem="ula-tn-iXM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NDD-Eh-Rxn"/>
                     <constraint firstItem="Ryb-3N-SLb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YCG-bl-yJ1"/>
                     <constraint firstAttribute="trailing" secondItem="Ryb-3N-SLb" secondAttribute="trailing" id="qQr-fp-qUm"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="ula-tn-iXM" secondAttribute="trailing" id="sz5-ZS-jYx"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -55,8 +56,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="quaternaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

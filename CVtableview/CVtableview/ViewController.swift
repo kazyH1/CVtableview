@@ -13,11 +13,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         var nameLbName: String
         var img : String
         var Detail: String
-        var SDT: String
+        var SDT: Int
         
         
     }
-    var data = [Data(nameTitle: "Nguyen Duc Huy",nameLbName: "Student at DTU",img: "image1", Detail: "Date of birth: 2002/10/16\nAddress: Quang Nam\nZodiac: Libra",SDT: "0944521168"),Data(nameTitle: "Nguyen Duc Minh",nameLbName: "",img: "image2", Detail: "Date of birth: 2000/12/25\nAddress: Quang Nam\nZodiac: Capricorn",SDT: "0948981678")]
+    var data = [Data(nameTitle: "Nguyen Duc Huy",nameLbName: "Student at DTU",img: "Image1", Detail: "Date of birth: 2002/10/16\nAddress: Quang Nam\nZodiac: Libra",SDT: 0944521168),Data(nameTitle: "Nguyen Duc Minh",nameLbName: "Working at DNTN NguyenMinhHuy",img: "Image2", Detail: "Date of birth: 2000/12/25\nAddress: Quang Nam\nZodiac: Capricorn",SDT: 0948981678)]
     @IBOutlet weak var tbvCV: UITableView!{
         didSet{
             tbvCV.delegate = self
@@ -30,7 +30,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                // Do any additional setup after loading the view.
+                        // Do any additional setup after loading the view.
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -52,17 +52,30 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         {
         let cell = tbvCV.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! imageTableViewCell
         cell.imgUser.image=UIImage(named: data[indexPath.section].img)
-            cell.txtDetail.text = data[indexPath.section].Detail
+            
+            cell.lbDetail.text = data[indexPath.section].Detail
             return cell
             
         }
         else  {
             let cell = tbvCV.dequeueReusableCell(withIdentifier: "cell3", for: indexPath) as! buttonTableViewCell
-            cell.imgBackground.image=UIImage(named: data[indexPath.section].img)
-            /*cell.btnCall =  URL(string: "tel://" + data[indexPath.section].SDT) else { return }
-            UIApplication.shared.open(data[indexPath.section].SDT)*/
+            cell.imgBackground.image=UIImage(named: "Image3")
+            /*cell.btnCall =  URL(string: "tel://" + data[indexPath.section].SDT ) else { return }
+            UIApplication.shared.open(data[indexPath.section].SDT )*/
             return cell
             }
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0{
+            return 100
+        }
+        else if indexPath.row == 1{
+            return 250
+        }
+        else {
+            return 170
+            
+        }
     }
 }
 

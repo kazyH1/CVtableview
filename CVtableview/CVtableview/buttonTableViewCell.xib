@@ -17,24 +17,23 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIK-eL-Gz3">
-                        <rect key="frame" x="0.0" y="0.0" width="370" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="100"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="60" id="jR7-Kh-9oK"/>
+                            <constraint firstAttribute="height" constant="100" id="jR7-Kh-9oK"/>
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQT-lL-Qi7">
-                        <rect key="frame" x="150" y="80" width="70" height="30"/>
+                        <rect key="frame" x="145" y="120" width="80" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Yur-84-5ry"/>
-                            <constraint firstAttribute="width" constant="70" id="ZXu-OI-HYf"/>
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="gray" image="phone.circle.fill" catalog="system" title="Call"/>
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="pQT-lL-Qi7" secondAttribute="trailing" constant="150" id="9RN-5L-Tfi"/>
-                    <constraint firstItem="pQT-lL-Qi7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="150" id="AuN-0c-GR4"/>
+                    <constraint firstAttribute="trailing" secondItem="pQT-lL-Qi7" secondAttribute="trailing" constant="145" id="9RN-5L-Tfi"/>
+                    <constraint firstItem="pQT-lL-Qi7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="145" id="AuN-0c-GR4"/>
                     <constraint firstAttribute="trailing" secondItem="yIK-eL-Gz3" secondAttribute="trailing" id="UoI-un-rBu"/>
                     <constraint firstItem="yIK-eL-Gz3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vp0-Dy-ewB"/>
                     <constraint firstItem="pQT-lL-Qi7" firstAttribute="top" secondItem="yIK-eL-Gz3" secondAttribute="bottom" constant="20" id="duS-8l-TUy"/>
