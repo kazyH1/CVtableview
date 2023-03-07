@@ -22,6 +22,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func makeCall(with phoneNumber: String) {
         guard let url = URL(string: "tel://\(phoneNumber)") else { return }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            let alert = UIAlertController(title: "CALL", message: "Bạn có muốn thực hiện cuộc gọi?", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alert.addAction(cancelAction)
+            present(alert, animated: true, completion: nil)
+                } else {
+                    let alert = UIAlertController(title: "Không thể thực hiện cuộc gọi", message: "Thiết bị hiện tại không hỗ trợ chức năng gọi. Vui lòng kiểm tra lại.", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alert.addAction(okAction)
+                    present(alert, animated: true, completion: nil)
+                }
     }
     
     @IBOutlet weak var tbvCV: UITableView! {
