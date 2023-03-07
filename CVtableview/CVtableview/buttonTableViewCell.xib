@@ -30,7 +30,7 @@
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="gray" image="phone.circle.fill" catalog="system" title="Call"/>
                         <connections>
-                            <action selector="btnCall:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YF6-oP-Klv"/>
+                            <action selector="btnCallPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UPg-V8-sYd"/>
                         </connections>
                     </button>
                 </subviews>
@@ -45,7 +45,6 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="btnCall" destination="pQT-lL-Qi7" id="YVC-fr-5tZ"/>
                 <outlet property="imgBackground" destination="yIK-eL-Gz3" id="o7x-rE-CXc"/>
             </connections>
             <point key="canvasLocation" x="121.73913043478262" y="103.45982142857143"/>
