@@ -171,8 +171,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = clvMyWorkflows.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for:  indexPath) as! CollectionViewCell
-        cell.contentView.layer.cornerRadius = 10
-        cell.contentView.layer.masksToBounds = true
+        cell.layer.cornerRadius = 10.0
         if indexPath.item == 0 {
             setupItem(color: .systemOrange, icon: "PlayIcon", nameItem: "Play Music", cell: cell, forItemAt: indexPath.item)
             let image = UIImage(named: "")
