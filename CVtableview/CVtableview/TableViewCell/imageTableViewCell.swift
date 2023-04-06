@@ -22,4 +22,8 @@ class imageTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configCell(data: Data) {
+        imgUser.image = UIImage(named: data.img)
+        lbDetail.text = data.Detail
+    }
 }

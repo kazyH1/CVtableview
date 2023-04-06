@@ -24,4 +24,9 @@ class CVTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configCell(data: Data) {
+        lbTitle.text = data.nameTitle
+        lbName.text = data.nameLbName
+    }
+    
 }

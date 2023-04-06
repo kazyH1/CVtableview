@@ -22,6 +22,8 @@
 		001B18BA29AE867600D34157 /* imageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001B18B829AE867600D34157 /* imageTableViewCell.xib */; };
 		001B18BD29AE924700D34157 /* buttonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001B18BB29AE924600D34157 /* buttonTableViewCell.swift */; };
 		001B18BE29AE924700D34157 /* buttonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001B18BC29AE924600D34157 /* buttonTableViewCell.xib */; };
+		004A264C29BA2D5D0019EED4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A264A29BA2D5D0019EED4 /* CollectionViewCell.swift */; };
+		004A264D29BA2D5D0019EED4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004A264B29BA2D5D0019EED4 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		001B18B829AE867600D34157 /* imageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageTableViewCell.xib; sourceTree = "<group>"; };
 		001B18BB29AE924600D34157 /* buttonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonTableViewCell.swift; sourceTree = "<group>"; };
 		001B18BC29AE924600D34157 /* buttonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = buttonTableViewCell.xib; sourceTree = "<group>"; };
+		004A264A29BA2D5D0019EED4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		004A264B29BA2D5D0019EED4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		001B187C29AE77FF00D34157 /* CVtableview */ = {
 			isa = PBXGroup;
 			children = (
+				004A264929BA25190019EED4 /* TableViewCell */,
 				001B187D29AE77FF00D34157 /* AppDelegate.swift */,
 				001B187F29AE77FF00D34157 /* SceneDelegate.swift */,
 				001B188129AE77FF00D34157 /* ViewController.swift */,
@@ -118,12 +123,7 @@
 				001B188629AE780100D34157 /* Assets.xcassets */,
 				001B188829AE780100D34157 /* LaunchScreen.storyboard */,
 				001B188B29AE780100D34157 /* Info.plist */,
-				001B18AD29AE785E00D34157 /* CVTableViewCell.swift */,
-				001B18AE29AE785E00D34157 /* CVTableViewCell.xib */,
-				001B18B729AE867600D34157 /* imageTableViewCell.swift */,
-				001B18B829AE867600D34157 /* imageTableViewCell.xib */,
-				001B18BB29AE924600D34157 /* buttonTableViewCell.swift */,
-				001B18BC29AE924600D34157 /* buttonTableViewCell.xib */,
+				004A264E29BA2F5B0019EED4 /* CollectionViewCell */,
 			);
 			path = CVtableview;
 			sourceTree = "<group>";
@@ -143,6 +143,28 @@
 				001B18A029AE780200D34157 /* CVtableviewUITestsLaunchTests.swift */,
 			);
 			path = CVtableviewUITests;
+			sourceTree = "<group>";
+		};
+		004A264929BA25190019EED4 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				001B18AD29AE785E00D34157 /* CVTableViewCell.swift */,
+				001B18AE29AE785E00D34157 /* CVTableViewCell.xib */,
+				001B18B729AE867600D34157 /* imageTableViewCell.swift */,
+				001B18B829AE867600D34157 /* imageTableViewCell.xib */,
+				001B18BB29AE924600D34157 /* buttonTableViewCell.swift */,
+				001B18BC29AE924600D34157 /* buttonTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		004A264E29BA2F5B0019EED4 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				004A264A29BA2D5D0019EED4 /* CollectionViewCell.swift */,
+				004A264B29BA2D5D0019EED4 /* CollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				001B18B029AE785E00D34157 /* CVTableViewCell.xib in Resources */,
+				004A264D29BA2D5D0019EED4 /* CollectionViewCell.xib in Resources */,
 				001B188A29AE780100D34157 /* LaunchScreen.storyboard in Resources */,
 				001B188729AE780100D34157 /* Assets.xcassets in Resources */,
 				001B18BE29AE924700D34157 /* buttonTableViewCell.xib in Resources */,
@@ -282,6 +305,7 @@
 				001B18B929AE867600D34157 /* imageTableViewCell.swift in Sources */,
 				001B18AF29AE785E00D34157 /* CVTableViewCell.swift in Sources */,
 				001B188229AE77FF00D34157 /* ViewController.swift in Sources */,
+				004A264C29BA2D5D0019EED4 /* CollectionViewCell.swift in Sources */,
 				001B187E29AE77FF00D34157 /* AppDelegate.swift in Sources */,
 				001B188029AE77FF00D34157 /* SceneDelegate.swift in Sources */,
 				001B18BD29AE924700D34157 /* buttonTableViewCell.swift in Sources */,
