@@ -24,6 +24,9 @@
 		001B18BE29AE924700D34157 /* buttonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001B18BC29AE924600D34157 /* buttonTableViewCell.xib */; };
 		004A264C29BA2D5D0019EED4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A264A29BA2D5D0019EED4 /* CollectionViewCell.swift */; };
 		004A264D29BA2D5D0019EED4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004A264B29BA2D5D0019EED4 /* CollectionViewCell.xib */; };
+		31F6029ECA426FABE7B2CC36 /* Pods_CVtableviewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B1EE878E5639A0B5F2AB12 /* Pods_CVtableviewTests.framework */; };
+		4C74084EAF28638B8215529E /* Pods_CVtableview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC1408477937632F5F1F8DD /* Pods_CVtableview.framework */; };
+		EB52014AA6CFF4063AE479B1 /* Pods_CVtableview_CVtableviewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BF6CBAA8338C99D5F17425 /* Pods_CVtableview_CVtableviewUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,15 @@
 		001B18BC29AE924600D34157 /* buttonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = buttonTableViewCell.xib; sourceTree = "<group>"; };
 		004A264A29BA2D5D0019EED4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		004A264B29BA2D5D0019EED4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		0400540CAC06BA48631167CF /* Pods-CVtableview-CVtableviewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVtableview-CVtableviewUITests.release.xcconfig"; path = "Target Support Files/Pods-CVtableview-CVtableviewUITests/Pods-CVtableview-CVtableviewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0523FDF0A608EECADE70E476 /* Pods-CVtableviewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVtableviewTests.debug.xcconfig"; path = "Target Support Files/Pods-CVtableviewTests/Pods-CVtableviewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		08BF6CBAA8338C99D5F17425 /* Pods_CVtableview_CVtableviewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVtableview_CVtableviewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F99151037EAD70089509224 /* Pods-CVtableviewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVtableviewTests.release.xcconfig"; path = "Target Support Files/Pods-CVtableviewTests/Pods-CVtableviewTests.release.xcconfig"; sourceTree = "<group>"; };
+		576EC5C01AAB298EF4509EEA /* Pods-CVtableview-CVtableviewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVtableview-CVtableviewUITests.debug.xcconfig"; path = "Target Support Files/Pods-CVtableview-CVtableviewUITests/Pods-CVtableview-CVtableviewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DC1408477937632F5F1F8DD /* Pods_CVtableview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVtableview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7CE4915036D36563F4B1F76 /* Pods-CVtableview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVtableview.debug.xcconfig"; path = "Target Support Files/Pods-CVtableview/Pods-CVtableview.debug.xcconfig"; sourceTree = "<group>"; };
+		C976DB07800985FE2352124D /* Pods-CVtableview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVtableview.release.xcconfig"; path = "Target Support Files/Pods-CVtableview/Pods-CVtableview.release.xcconfig"; sourceTree = "<group>"; };
+		E5B1EE878E5639A0B5F2AB12 /* Pods_CVtableviewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVtableviewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C74084EAF28638B8215529E /* Pods_CVtableview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F6029ECA426FABE7B2CC36 /* Pods_CVtableviewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB52014AA6CFF4063AE479B1 /* Pods_CVtableview_CVtableviewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +114,8 @@
 				001B189329AE780100D34157 /* CVtableviewTests */,
 				001B189D29AE780200D34157 /* CVtableviewUITests */,
 				001B187B29AE77FF00D34157 /* Products */,
+				A9B6BBE278EFF14398C7CDF0 /* Pods */,
+				1D960F1B8B560D74AE5F0B93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +184,30 @@
 			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
+		1D960F1B8B560D74AE5F0B93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DC1408477937632F5F1F8DD /* Pods_CVtableview.framework */,
+				08BF6CBAA8338C99D5F17425 /* Pods_CVtableview_CVtableviewUITests.framework */,
+				E5B1EE878E5639A0B5F2AB12 /* Pods_CVtableviewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9B6BBE278EFF14398C7CDF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7CE4915036D36563F4B1F76 /* Pods-CVtableview.debug.xcconfig */,
+				C976DB07800985FE2352124D /* Pods-CVtableview.release.xcconfig */,
+				576EC5C01AAB298EF4509EEA /* Pods-CVtableview-CVtableviewUITests.debug.xcconfig */,
+				0400540CAC06BA48631167CF /* Pods-CVtableview-CVtableviewUITests.release.xcconfig */,
+				0523FDF0A608EECADE70E476 /* Pods-CVtableviewTests.debug.xcconfig */,
+				0F99151037EAD70089509224 /* Pods-CVtableviewTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 001B18A429AE780200D34157 /* Build configuration list for PBXNativeTarget "CVtableview" */;
 			buildPhases = (
+				A54BDFD2CD8C73C261AFA8BC /* [CP] Check Pods Manifest.lock */,
 				001B187629AE77FF00D34157 /* Sources */,
 				001B187729AE77FF00D34157 /* Frameworks */,
 				001B187829AE77FF00D34157 /* Resources */,
+				4609F815468CF9FE86C191DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 001B18A729AE780200D34157 /* Build configuration list for PBXNativeTarget "CVtableviewTests" */;
 			buildPhases = (
+				BC9FA2A4C9761C9D099A2ABF /* [CP] Check Pods Manifest.lock */,
 				001B188C29AE780100D34157 /* Sources */,
 				001B188D29AE780100D34157 /* Frameworks */,
 				001B188E29AE780100D34157 /* Resources */,
@@ -209,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 001B18AA29AE780200D34157 /* Build configuration list for PBXNativeTarget "CVtableviewUITests" */;
 			buildPhases = (
+				20EBAC55DC9548E8B6E544C5 /* [CP] Check Pods Manifest.lock */,
 				001B189629AE780200D34157 /* Sources */,
 				001B189729AE780200D34157 /* Frameworks */,
 				001B189829AE780200D34157 /* Resources */,
+				F59A0B479B4B04FC2A1DFEC7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +342,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20EBAC55DC9548E8B6E544C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVtableview-CVtableviewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4609F815468CF9FE86C191DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVtableview/Pods-CVtableview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVtableview/Pods-CVtableview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CVtableview/Pods-CVtableview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A54BDFD2CD8C73C261AFA8BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVtableview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9FA2A4C9761C9D099A2ABF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVtableviewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59A0B479B4B04FC2A1DFEC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVtableview-CVtableviewUITests/Pods-CVtableview-CVtableviewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVtableview-CVtableviewUITests/Pods-CVtableview-CVtableviewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CVtableview-CVtableviewUITests/Pods-CVtableview-CVtableviewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		001B187629AE77FF00D34157 /* Sources */ = {
@@ -480,6 +629,7 @@
 		};
 		001B18A529AE780200D34157 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7CE4915036D36563F4B1F76 /* Pods-CVtableview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -507,6 +657,7 @@
 		};
 		001B18A629AE780200D34157 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C976DB07800985FE2352124D /* Pods-CVtableview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -534,6 +685,7 @@
 		};
 		001B18A829AE780200D34157 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0523FDF0A608EECADE70E476 /* Pods-CVtableviewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -553,6 +705,7 @@
 		};
 		001B18A929AE780200D34157 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F99151037EAD70089509224 /* Pods-CVtableviewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -572,6 +725,7 @@
 		};
 		001B18AB29AE780200D34157 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 576EC5C01AAB298EF4509EEA /* Pods-CVtableview-CVtableviewUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -589,6 +743,7 @@
 		};
 		001B18AC29AE780200D34157 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0400540CAC06BA48631167CF /* Pods-CVtableview-CVtableviewUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

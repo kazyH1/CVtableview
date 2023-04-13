@@ -14,10 +14,10 @@
             filePath = "CVtableview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "ViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,8 +30,8 @@
             filePath = "CVtableview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,10 +46,42 @@
             filePath = "CVtableview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B52B790E-A733-4F9B-B99F-DDC71A50CA7A - dfe653e4b309c0c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CVtableview.ViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "184"
+                  endingLineNumber = "184"
+                  offsetFromSymbolStart = "170">
+               </Location>
+               <Location
+                  uuid = "B52B790E-A733-4F9B-B99F-DDC71A50CA7A - d6db73371ae0dab3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CVtableview.ViewController.numberOfSections(in: __C.UICollectionView) -&gt; Swift.Int"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,10 +94,42 @@
             filePath = "CVtableview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAE88DAD-96D6-4373-BEC7-DBCF91B0FA5C - 320ae8e56c22685a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CVtableview.ViewController.setupItem(color: __C.UIColor, icon: Swift.String, nameItem: Swift.String, cell: CVtableview.CollectionViewCell, forItemAt: Swift.Int) -&gt; ()"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "169"
+                  endingLineNumber = "169"
+                  offsetFromSymbolStart = "318">
+               </Location>
+               <Location
+                  uuid = "DAE88DAD-96D6-4373-BEC7-DBCF91B0FA5C - e5d811c3c9350fb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CVtableview.ViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "169"
+                  endingLineNumber = "169"
+                  offsetFromSymbolStart = "150">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,8 +142,8 @@
             filePath = "CVtableview/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "collectionView(_:layout:sizeForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -98,6 +162,148 @@
             endingLineNumber = "6"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F287231-48E8-4BC3-A324-D68B8451C0EF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CVtableview/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F287231-48E8-4BC3-A324-D68B8451C0EF - 73bf2716b38f7366"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in CVtableview.ViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "2F287231-48E8-4BC3-A324-D68B8451C0EF - dfe653e4b309c0e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CVtableview.ViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "170">
+               </Location>
+               <Location
+                  uuid = "2F287231-48E8-4BC3-A324-D68B8451C0EF - 73bf2716b38f7347"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in CVtableview.ViewController.collectionView(_: __C.UICollectionView, didSelectItemAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8EFF93FD-0F8B-49A6-B559-970224D4B884"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CVtableview/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "actionIcon(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8EFF93FD-0F8B-49A6-B559-970224D4B884 - 1b929df80084c295"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in CVtableview.ViewController.actionIcon(with: Swift.Int) -&gt; ()"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  uuid = "8EFF93FD-0F8B-49A6-B559-970224D4B884 - 468c939044246d95"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CVtableview.ViewController.actionIcon(with: Swift.Int) -&gt; ()"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "8EFF93FD-0F8B-49A6-B559-970224D4B884 - 1b929df80084c2b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in CVtableview.ViewController.actionIcon(with: Swift.Int) -&gt; ()"
+                  moduleName = "CVtableview"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huynguyen/iOS/CVtableview/CVtableview/CVtableview/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CC42C30-630D-46DD-9AEB-CB5081B1DD12"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CVtableview/CollectionViewCell/CollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "btnIcon(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

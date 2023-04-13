@@ -6,6 +6,13 @@
 //
 
 import UIKit
+import Alamofire
+
+//struct Cat {
+//    var fact: String
+//    var length: Int
+//    var testArray: []
+//}
 
 struct Data {
     var nameTitle: String
@@ -14,6 +21,11 @@ struct Data {
     var Detail: String
     var SDT: String
 }
+struct DataCLV {
+    var color: UIColor
+    var icon, nameItem, inputMessage: String
+}
+
 
 class ViewController: UIViewController {
     
@@ -31,8 +43,7 @@ class ViewController: UIViewController {
             break
         }
     }
-    
-    
+    var dataCLV = [DataCLV(color:.systemOrange, icon: "PlayIcon",nameItem: "Play Music", inputMessage: "Bạn có muốn phát nhạc không?"), DataCLV(color:.systemOrange, icon: "PauseIcon",nameItem: "Pause Music", inputMessage: "Bạn có muốn dừng nhạc không?"), DataCLV(color:.systemBlue, icon: "SkipBackIcon",nameItem: "Skip Back",inputMessage: "Bạn có muốn tua lại bài đã phát không?"), DataCLV(color:.systemBlue, icon: "SkipFowardIcon",nameItem: "Skip Forward",inputMessage: "Bạn có muốn tua đến bài tiếp theo không?"), DataCLV(color:.systemPink, icon: "ClearIcon",nameItem: "Clear All ClipBoard",inputMessage: "Bạn có muốn xoá hết tất cả ClipBoard không?"), DataCLV(color:.systemPink, icon: "GetClipIcon",nameItem: "Get ClipBoard",inputMessage: "Bạn có muốn mở ClipBoard không?"), DataCLV(color:.systemPink, icon: "TranslateIcon",nameItem: "Translate ClipBoard",inputMessage: "Bạn có muốn chuyển đổi ClipBoard không?"), DataCLV(color:.systemPink, icon: "ChangeIcon",nameItem: "Change ClipBoard", inputMessage: "Bạn có muốn cắt ClipBoard không?"), DataCLV(color:.systemOrange, icon: "BatteryIcon",nameItem: "Iphone Battery Level",inputMessage: "Bạn có muốn xem % pin không?"), DataCLV(color:.systemGray, icon: "PlaylistIcon",nameItem: "Play Playlist Part 1.",inputMessage: "Bạn có muốn phát nhạc ở PlayList Music 1. không?")]
     var data = [Data(nameTitle: "Nguyen Duc Huy",nameLbName: "Student at DTU",img: "Image1", Detail: "Date of birth: 2002/10/16\nAddress: Quang Nam\nZodiac: Libra",SDT: "0944521168"),Data(nameTitle: "Nguyen Duc Minh",nameLbName: "Working at DNTN NguyenMinhHuy",img: "Image2", Detail: "Date of birth: 2000/12/25\nAddress: Quang Nam\nZodiac: Capricorn",SDT: "0948981678")]
     
     override func viewDidLoad() {
@@ -153,6 +164,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let widthView = self.view.frame.width
@@ -160,126 +172,43 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         return CGSize(width: width, height: 100)
     }
     
-    func setupItem(color: UIColor, icon: String, nameItem: String, cell: CollectionViewCell, forItemAt item: Int) {
-        cell.backgroundColor = color
-        cell.lbText.text = nameItem
-        if let image = UIImage(named: icon) {
-            let resizedImage = image.resizeImage(targetSize: CGSize(width: 30, height: 30))
-            cell.btnIcon.setImage(resizedImage, for: .normal)
-        }
-    }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = clvMyWorkflows.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for:  indexPath) as! CollectionViewCell
         cell.layer.cornerRadius = 10.0
-        if indexPath.item == 0 {
-            setupItem(color: .systemOrange, icon: "PlayIcon", nameItem: "Play Music", cell: cell, forItemAt: indexPath.item)
-            let image = UIImage(named: "")
-            cell.btnIcon.setImage(image, for: .normal)
-        } else if indexPath.item == 1 {
-            setupItem(color: .systemOrange, icon: "PauseIcon", nameItem: "Pause Music", cell: cell, forItemAt: indexPath.item)
-        } else if indexPath.item == 2 {
-            setupItem(color: .systemBlue, icon: "SkipBackIcon", nameItem: "Skip Back", cell: cell, forItemAt: indexPath.item)
-        }  else if indexPath.item == 3 {
-            setupItem(color: .systemBlue, icon: "SkipFowardIcon", nameItem: "Skip Foward", cell: cell, forItemAt: indexPath.item)
-        } else if indexPath.item == 4 {
-            setupItem(color: .systemPink, icon: "ClearIcon", nameItem: "Clear All ClipBoard", cell: cell, forItemAt: indexPath.item)
-        } else if indexPath.item == 5 {
-            setupItem(color: .systemPink, icon: "GetClipIcon", nameItem: "Get ClipBoard", cell: cell, forItemAt: indexPath.item)
-        } else if indexPath.item == 6 {
-            setupItem(color: .systemPink, icon: "TranslateIcon", nameItem: "Translate ClipBoard", cell: cell, forItemAt: indexPath.item)
-        } else if indexPath.item == 7 {
-            setupItem(color: .systemPink, icon: "ChangeIcon", nameItem: "Change ClipBoard", cell: cell, forItemAt: indexPath.item)
-        } else if indexPath.item == 8 {
-            setupItem(color: .systemOrange, icon: "BatteryIcon", nameItem: "Iphone Battery Level", cell: cell, forItemAt: indexPath.item)
-        } else if indexPath.item == 9 {
-            setupItem(color: .systemGray, icon: "PlaylistIcon", nameItem: "Play Playlist Part 1.", cell: cell, forItemAt: indexPath.item)
-        }
+        let dataCLV = dataCLV[indexPath.item]
+        cell.delegate = self
+        cell.configCell(dataclv: dataCLV, row: indexPath.item)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return dataCLV.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item == 0 {
-            alertController(inputTitleController: "Play Music", titleButtonOK: "OK", titleButtonCancel: "Cancel", inputMessage: "Bạn có muốn phát nhạc không?") {
-                result in
+        alertController(inputTitleController: dataCLV[indexPath.item].nameItem, titleButtonOK: "OK", titleButtonCancel: "Cancel", inputMessage: dataCLV[indexPath.item].inputMessage) {
+            result in
+            if result {
                 print("default")
-            }
-        } else if indexPath.item == 1 {
-            alertController(inputTitleController: "Pause Music", titleButtonOK: "OK", titleButtonCancel: "Cacel", inputMessage: "Bạn có muốn dừng nhạc không?") {
-                result in
-                print("default")
-            }
-        } else if indexPath.item == 2 {
-            alertController(inputTitleController: "Skip Back", titleButtonOK: "OK", titleButtonCancel: "Cacel", inputMessage: "Bạn có muốn tua lại bài đã phát không?") {
-                result in
-                print("default")
-            }
-        } else if indexPath.item == 3 {
-            alertController(inputTitleController: "Skip Foward", titleButtonOK: "OK", titleButtonCancel: "Cacel", inputMessage: "Bạn có muốn tua đến bài tiếp theo không?") {
-                result in
-                print("default")
-            }
-        } else if indexPath.item == 5 {
-            alertController(inputTitleController: "Get ClipBoard", titleButtonOK: "OK", titleButtonCancel: "Cacel", inputMessage: "Bạn có muốn mở ClipBoard không?") {
-                result in
-                print("default")
-            }
-        } else if indexPath.item == 6 {
-            alertController(inputTitleController: "Translate ClipBoard", titleButtonOK: "OK", titleButtonCancel: "Cacel", inputMessage: "Bạn có muốn chuyển đổi ClipBoard không?") {
-                result in
-                print("default")
-            }
-        } else if indexPath.item == 7 {
-            alertController(inputTitleController: "Change ClipBoard", titleButtonOK: "OK", titleButtonCancel: "Cacel", inputMessage: "Bạn có muốn cắt ClipBoard không?") {
-                result in
-                print("default")
-            }
-        } else if indexPath.item == 4 {
-            alertController(inputTitleController: "Clear All ClipBoard", titleButtonOK: "OK", titleButtonCancel: "Cacel", inputMessage: "Bạn có muốn xoá hết tất cả ClipBoard không?") {
-                result in
-                print("default")
-            }
-        } else if indexPath.item == 8 {
-            alertController(inputTitleController: "Iphone Battery Level", titleButtonOK: "OK", titleButtonCancel: "Cacel", inputMessage: "Bạn có muốn xem % pin không?") {
-                result in
-                print("default")
-            }
-        } else if indexPath.item == 9 {
-            alertController(inputTitleController: "Play Playlist Music 1.", titleButtonOK: "OK", titleButtonCancel: "Cacel", inputMessage: "Bạn có muốn phát nhạc ở PlayList Music 1. không?") {
-                result in
-                print("default")
+            } else {
+                print("cancel")
             }
         }
     }
 }
-
-extension UIImage {
-    func resizeImage(targetSize: CGSize) -> UIImage {
-        let size = self.size
-        
-        let widthRatio  = targetSize.width  / size.width
-        let heightRatio = targetSize.height / size.height
-        
-        // Tính toán tỷ lệ giữa chiều rộng và chiều cao để tìm ra tỷ lệ nhỏ nhất
-        let ratio = min(widthRatio, heightRatio)
-        
-        // Tính toán kích thước mới dựa trên tỷ lệ nhỏ nhất đã tính toán
-        let newSize = CGSize(width: size.width * ratio, height: size.height * ratio)
-        
-        // Vẽ lại hình ảnh với kích thước mới đã tính toán
-        let renderer = UIGraphicsImageRenderer(size: newSize)
-        let newImage = renderer.image { (context) in
-            self.draw(in: CGRect(origin: CGPoint.zero, size: newSize))
+extension ViewController: CollectionViewCellDelegate {
+    func actionIcon(with rowSelect: Int) {
+        alertController(inputTitleController: dataCLV[rowSelect].nameItem, titleButtonOK: "OK", titleButtonCancel: "Cancel", inputMessage: dataCLV[rowSelect].inputMessage) {
+            result in
+            if result {
+                print("default")
+            } else {
+                print("cancel")
+            }
         }
-        
-        return newImage
     }
 }
 
